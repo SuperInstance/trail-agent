@@ -1,0 +1,75 @@
+[
+  {
+    "op": "TRAIL_BEGIN",
+    "agent": "navi-7",
+    "trail_id": "med-001-trust-and-communication",
+    "ts": 1700000100,
+    "desc": "Multi-agent trust building trail"
+  },
+  {
+    "op": "COMMENT",
+    "comment": "Phase 1: Establish trust with oracle",
+    "desc": "Starting trust protocol"
+  },
+  {
+    "op": "TRUST_UPDATE",
+    "target": "oracle-1",
+    "delta": 10,
+    "desc": "Increase trust with oracle"
+  },
+  {
+    "op": "BOTTLE_DROP",
+    "target": "oracle-1",
+    "content": "{\"type\": \"query\", \"topic\": \"refactoring-strategy\"}",
+    "desc": "Send query to oracle"
+  },
+  {
+    "op": "LABEL",
+    "label": "wait_for_response",
+    "desc": "Await oracle response"
+  },
+  {
+    "op": "BOTTLE_READ",
+    "source": "oracle-1",
+    "desc": "Read oracle response"
+  },
+  {
+    "op": "COMMENT",
+    "comment": "Phase 2: Apply knowledge",
+    "desc": "Processing oracle guidance"
+  },
+  {
+    "op": "FILE_READ",
+    "path": "src/legacy.py",
+    "desc": "Read legacy code"
+  },
+  {
+    "op": "SEARCH_CODE",
+    "pattern": "class Legacy",
+    "desc": "Find legacy class"
+  },
+  {
+    "op": "FILE_EDIT",
+    "path": "src/legacy.py",
+    "old": "class Legacy:",
+    "new": "class ModernRefactored:",
+    "desc": "Refactor class name"
+  },
+  {
+    "op": "CAP_ISSUE",
+    "action": "refactor",
+    "holder": "navi-7",
+    "desc": "Record refactoring capability"
+  },
+  {
+    "op": "LEVEL_UP",
+    "level": 5,
+    "desc": "Level up to 5"
+  },
+  {
+    "op": "TRAIL_END",
+    "steps": 10,
+    "status": 0,
+    "desc": "Trust and communication complete"
+  }
+]

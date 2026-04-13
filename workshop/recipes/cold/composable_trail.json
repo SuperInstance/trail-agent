@@ -1,0 +1,71 @@
+[
+  {
+    "op": "TRAIL_BEGIN",
+    "agent": "navi-7",
+    "trail_id": "cold-001-composable-trail",
+    "ts": 1700001000,
+    "desc": "Composable trail with branches and labels"
+  },
+  {
+    "op": "LABEL",
+    "label": "entry_point",
+    "desc": "Trail entry point"
+  },
+  {
+    "op": "COMMENT",
+    "comment": "Decision gate: check if tests exist",
+    "desc": "Conditional branch"
+  },
+  {
+    "op": "BRANCH",
+    "reg": 0,
+    "desc": "Branch on register 0"
+  },
+  {
+    "op": "NOP",
+    "desc": "Padding between sections"
+  },
+  {
+    "op": "LABEL",
+    "label": "test_section",
+    "desc": "Test section start"
+  },
+  {
+    "op": "TEST_RUN",
+    "test_path": "tests/unit/",
+    "count": 24,
+    "desc": "Run unit tests"
+  },
+  {
+    "op": "LABEL",
+    "label": "integration_section",
+    "desc": "Integration section start"
+  },
+  {
+    "op": "TEST_RUN",
+    "test_path": "tests/integration/",
+    "count": 8,
+    "desc": "Run integration tests"
+  },
+  {
+    "op": "SPELL_CAST",
+    "spell_id": "analyze-coverage",
+    "desc": "Cast coverage analysis spell"
+  },
+  {
+    "op": "ROOM_ENTER",
+    "room_id": "review-chamber",
+    "desc": "Enter review room"
+  },
+  {
+    "op": "COMMENT",
+    "comment": "Trail concatenation point — attach next trail here",
+    "desc": "Composition boundary"
+  },
+  {
+    "op": "TRAIL_END",
+    "steps": 10,
+    "status": 0,
+    "desc": "Composable trail complete"
+  }
+]

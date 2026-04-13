@@ -1,0 +1,20 @@
+[
+  {
+    "op": "TRAIL_BEGIN",
+    "agent": "navi-7",
+    "trail_id": "bootcamp-001-hello-trail",
+    "ts": 1700000000,
+    "desc": "Bootcamp Exercise 1: Hello Trail"
+  },
+  {
+    "op": "FILE_READ",
+    "path": "hello.py",
+    "desc": "Read hello world file"
+  },
+  {
+    "op": "TRAIL_END",
+    "steps": 1,
+    "status": 0,
+    "desc": "Hello trail complete"
+  }
+]

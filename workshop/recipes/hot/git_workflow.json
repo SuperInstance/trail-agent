@@ -1,0 +1,39 @@
+[
+  {
+    "op": "TRAIL_BEGIN",
+    "agent": "navi-7",
+    "trail_id": "hot-002-git-workflow",
+    "ts": 1700000001,
+    "desc": "Git commit and push trail"
+  },
+  {
+    "op": "FILE_EDIT",
+    "path": "README.md",
+    "old": "# My Project",
+    "new": "# My Project\n\n## v2.0\nUpdated with new features.",
+    "desc": "Update README"
+  },
+  {
+    "op": "TEST_RUN",
+    "test_path": "tests/",
+    "count": 12,
+    "desc": "Run test suite"
+  },
+  {
+    "op": "GIT_COMMIT",
+    "repo_id": 1,
+    "message": "feat: update README and pass all tests",
+    "desc": "Commit changes"
+  },
+  {
+    "op": "GIT_PUSH",
+    "repo_id": 1,
+    "desc": "Push to remote"
+  },
+  {
+    "op": "TRAIL_END",
+    "steps": 4,
+    "status": 0,
+    "desc": "Git workflow complete"
+  }
+]

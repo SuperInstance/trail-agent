@@ -1,0 +1,31 @@
+[
+  {
+    "op": "TRAIL_BEGIN",
+    "agent": "navi-7",
+    "trail_id": "hot-001-basic-file-ops",
+    "ts": 1700000000,
+    "desc": "Basic file read/write trail"
+  },
+  {
+    "op": "FILE_READ",
+    "path": "src/main.py",
+    "desc": "Read the main module"
+  },
+  {
+    "op": "SEARCH_CODE",
+    "pattern": "def process",
+    "desc": "Find process function"
+  },
+  {
+    "op": "FILE_WRITE",
+    "path": "src/utils.py",
+    "content": "# utilities module\ndef helper():\n    pass\n",
+    "desc": "Create utils module"
+  },
+  {
+    "op": "TRAIL_END",
+    "steps": 3,
+    "status": 0,
+    "desc": "Trail complete"
+  }
+]

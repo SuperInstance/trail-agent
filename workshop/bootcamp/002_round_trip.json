@@ -1,0 +1,37 @@
+[
+  {
+    "op": "TRAIL_BEGIN",
+    "agent": "navi-7",
+    "trail_id": "bootcamp-002-round-trip",
+    "ts": 1700000001,
+    "desc": "Bootcamp Exercise 2: Round Trip"
+  },
+  {
+    "op": "FILE_READ",
+    "path": "src/app.py",
+    "desc": "Read application file"
+  },
+  {
+    "op": "FILE_WRITE",
+    "path": "src/app.py",
+    "content": "# app v2\nprint('hello')\n",
+    "desc": "Write updated application"
+  },
+  {
+    "op": "TEST_RUN",
+    "test_path": "tests/",
+    "count": 5,
+    "desc": "Run tests"
+  },
+  {
+    "op": "COMMENT",
+    "comment": "Verify: encode this trail, decode it, compare steps",
+    "desc": "Round-trip verification hint"
+  },
+  {
+    "op": "TRAIL_END",
+    "steps": 4,
+    "status": 0,
+    "desc": "Round-trip trail complete"
+  }
+]
