@@ -1,26 +1,32 @@
 # trail-agent
 
-**Trail Agent** – a Python library for interacting with the Cocapn Fleet (part of the SuperInstance ecosystem).
+**Python agent for executing trails – part of the Cocapn Fleet**  
+<https://github.com/SuperInstance>
 
 ## Description
-`trail-agent` provides the core components for encoding, compiling, and executing “trails” within the Cocapn Fleet. It includes a CLI, a library API, and a test suite.
+`trail-agent` provides a lightweight, extensible framework to compile, encode, and execute trail definitions. It integrates with the Cocapn Fleet and includes a CLI, core modules, and a test suite.
 
-## Usage
+## Installation
 ```bash
-# Install (editable)
+git clone https://github.com/SuperInstance/trail-agent.git
+cd trail-agent
 pip install -e .
-
-# Run the CLI
-python -m trail_agent.cli --help
-
-# Execute the agent directly
-python -m trail_agent
 ```
 
+## Usage
+Run the command‑line interface:
+```bash
+python -m trail_agent.cli --help
+# or
+python -m trail_agent --run path/to/trail.yaml
+```
+
+Typical workflow:
+1. **Compile** a trail – `trail_compiler.py`
+2. **Encode** it – `trail_codec.py`
+3. **Execute** – `trail_executor.py`
+
 ## Related
-- **Cocapn Fleet** – https://github.com/SuperInstance/cocapn-fleet  
-- **SuperInstance** – https://github.com/SuperInstance  
-
----  
-
-*License: see [LICENSE](LICENSE).*
+- **Cocapn Fleet** – the larger ecosystem: <https://github.com/SuperInstance>
+- **Documentation & Wiki** – <https://github.com/SuperInstance/trail-agent/wiki>
+- **Other agents** – see the `workshop/` directory for examples and extensions.
